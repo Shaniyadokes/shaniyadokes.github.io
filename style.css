@@ -1,7 +1,7 @@
 body {
     background: rgb(129, 215, 223);
     color: rgb(250, 250, 250);
-    padding: 30px;
+    padding: 10px;
     font-family: arial;
 }
 #all-contents {
@@ -10,11 +10,12 @@ body {
 }
 
 /* navigation menu */
-nav {
+nav { 
+    border-radius:30px;
     background: rgb(18, 164, 184);
    margin: 0 auto;
     display: flex;
-    padding: 28px;
+    padding: 10px;
 }
 h1 {
     display: flex;
@@ -45,8 +46,7 @@ main {
     padding: 10px;
 }
 .sidebar-img {
-    width: 10
-    0px;
+    width:200px;
 }
 .content {
     flex: 1;
@@ -60,3 +60,79 @@ main {
 h2,h3 { 
     margin: 0px
 }
+         /* portfolio styles */
+                  .content h1 {
+                                 color:teal ;
+                  }
+
+                           #portfolio {
+                                         list-style-type: circle ;
+                                                      padding-left: 0;
+                           }
+
+                                    #portfolio li {
+                                                     background: #00FFFF;
+                                                                  padding: 10px;
+                                                                               border-radius: 10px;
+                                                                                            margin-bottom: 10px;
+                                    }
+
+                                             #portfolio li:hover {
+                                                             background: #F0F8FF;
+                                             }
+
+                                                      #portfolio a {
+                                                                     text-decoration: underline dotte;
+                                                                                  color: #5F9EA0;
+                                                      }
+<img src= https://images.app.goo.gl/eVHG1W5nvH6V4yNm8">
+
+            /* responsive web design */
+                        @media screen and (min-width: 120px) and (max-width: 1080px) {
+                                      main {
+                                                      height: 100ch;
+                                                                      zoom: 1.5;
+                                                                                      displayl: grid;
+                                                                                                    }
+
+                                                                                                                  h1 {
+                                                                                                                                  font-size: 44px;
+                                                                                                                                                }
+
+                                                                                                                                                              h2 {
+                                                                                                                                                                              font-size: 42px;
+                                                                                                                                                                                            }
+
+                                                                                                                                                                                                          h3 {
+                                                                                                                                                                                                                          font-size: 36px;
+                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                      #all-contents {
+                                                                                                                                                                                                                                                                      height: 100ch;
+                                                                                                                                                                                                                                                                                      margin: topp;
+                                                                                                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                                                                                                                  a {
+                                                                                                                                                                                                                                                                                                                                  font-size: 42px;
+                                                                                                                                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                                                                                                                                              .sidebar {
+                                                                                                                                                                                                                                                                                                                                                                              margin-right: 0px;
+                                                                                                                                                                                                                                                                                                                                                                                              justify-content: center;
+                                                                                                                                                                                                                                                                                                                                                                                                              align-items: center;
+                                                                                                                                                                                                                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                          .sidebar-img {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                          width: 100%;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      p,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    li {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    font-size: 24px;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                .content {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                align-content: center;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                justify-content: center;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        }
