@@ -68,9 +68,11 @@ for (var i =0; i < 100; i++){
             game.checkCirclePosition(circles[4]);
 
             // TODO 9 : Iterate over the array
-           
-            
+           for (var i = 0; i < circles.length; i++) {
+            physikz.updatePosition(circles[1])
+            game.checkCriclePosition9(circles[i])
         }
+}
     
         /* 
         This Function should check the position of a circle that is passed to the 
@@ -85,10 +87,16 @@ for (var i =0; i < 100; i++){
             }
             
             // TODO 6 : YOUR CODE STARTS HERE //////////////////////
-            
-
-
-            // YOUR TODO 6 CODE ENDS HERE //////////////////////////
+            if (circle.x < 0) {
+                circle.x = canvas.with
+            }
+           if (circle.y < 0 ) {
+            circle.y = 0
+           }
+           if (circle.y> canvas.height) {
+            circle.y = 0
+           }
+                       // YOUR TODO 6 CODE ENDS HERE //////////////////////////
         }
         
         /////////////////////////////////////////////////////////////
