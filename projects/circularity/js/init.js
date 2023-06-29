@@ -55,11 +55,11 @@ circles.push(circle);
             physikz.updatePosition(circles[4]);
             
             // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
-           game.cbeckCirclePosition(circle[0]);
-           game.cbeckCirclePosition(circle[1]);
-           game.cbeckCirclePosition(circle[2]);
-           game.cbeckCirclePosition(circle[3]);
-           game.cbeckCirclePosition(circle[4]);
+           game.cbeckCirclePosition(circles[0]);
+           game.cbeckCirclePosition(circles[1]);
+           game.cbeckCirclePosition(circles[2]);
+           game.cbeckCirclePosition(circles[3]);
+           game.cbeckCirclePosition(circles[4]);
 
             // TODO 9 : Iterate over the array
            for (var i = 0; i <= circles.length - 1; i++) {
