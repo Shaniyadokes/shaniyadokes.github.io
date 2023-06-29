@@ -1,17 +1,13 @@
 var init = function (window) {
     'use strict';
-    var 
-        draw = window.opspark.draw,
+    var  draw = window.opspark.draw,
         physikz = window.opspark.racket.physikz,
-        
-        app = window.opspark.makeApp(),
+         app = window.opspark.makeApp(),
         canvas = app.canvas, 
         view = app.view,
         fps = draw.fps('#000');
         
-    
     window.opspark.makeGame = function() {
-        
         window.opspark.game = {};
         var game = window.opspark.game;
         
@@ -29,12 +25,16 @@ circle = draw.randomCircleInArea(canvas, true, true, "#999", 2);
 physikz.addRandomVelocity(circle, canvas, 10, 10);
 view.addChild(circle);
 circles.push(circle);
-
+   }
         // TODO 3 / 7 : Call the drawCircle() function 
-        var loopsCompleted = 0;
-        while (loopsCompleted <= 100) {
+        drawCircle();
+        drawCircle();
+        drawCircle();
+        drawCircle();
+        drawCircle();
+        drawCircle();
+        while (var i = 0; i < 100; i++) {
             dawCircle (); 
-            loopsCompleted++;
         }
 
         ////////////////////////////////////////////////////////////
@@ -48,19 +48,22 @@ circles.push(circle);
         */
         function update() {
             // TODO 4 : Update the circle's position //
-            //deleted previous code to iterate over the array // 
-          }
-  
-}
+            physikz.updatePosition(circles[0]);
+            physikz.updatePosition(circles[1]);
+            physikz.updatePosition(circles[2]);
+            physikz.updatePosition(circles[3]);
+            physikz.updatePosition(circles[4]);
             
             // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
-            //deleted previous code to iterate over the array // 
-           
+           game.cbeckCirclePosition(circle[0]);
+           game.cbeckCirclePosition(circle[1]);
+           game.cbeckCirclePosition(circle[2]);
+           game.cbeckCirclePosition(circle[3]);
+           game.cbeckCirclePosition(circle[4]);
 
             // TODO 9 : Iterate over the array
            for (var i = 0; i <= circles.length - 1; i++) {
-            circles[i].x += circles[i].velocityX;
-            circles[i].y += circles[i].velocityY;
+            physikz.updatePosition(circles[i]);
             game.checkCriclePosition9(circles[i]);
         }
 }
@@ -71,24 +74,22 @@ circles.push(circle);
         it to the opposite side of the screen.
         */
         game.checkCirclePosition = function(circle) {
-
-            // if the circle has gone past the RIGHT side of the screen then place it on the LEFT
-            
+ // if the circle has gone past the RIGHT side of the screen then place it on the LEFT
+            if (circle.x > canvas.width) {
+                circle.x = 0;
             }
             
             // TODO 6 : YOUR CODE STARTS HERE //////////////////////
-            if ( circle.x < canvas.addChild) {
-               circle.x = 960;
+            if ( circle.x < 0) {
+               circle.x = canvas.width;
             }
-           else if  (circle.x < 0 ) {
-            circle.x = 960
+           if  (circle.x < 0 ) {
+            circle.x = canvas.height;
            }
            if (circle.y > canvas.height) {
-            circle.y = 500;
+            circle.y = 0;
            }
-           else if ( circle.y < 0){
-            circle.y = 500;
-           }
+        
                        // YOUR TODO 6 CODE ENDS HERE //////////////////////////
         }
         
